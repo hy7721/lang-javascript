@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean의 대체제</title>
+</head>
+<body>
+    <h1>Boolean의 대체제</h1>
+
+    <h2>True로 간주되는 데이터 형</h2>
+    <p>JavaScript에서는 숫자 1이 true</p>
+    <p>1 == true</p>
+    <script>
+        if(1){
+            alert(0);
+        } // true
+    </script>
+
+    <h2>기타 false로 간주되는 데이터 형</h2>
+    <p>빈 문자열, undefined, null, NaN은 false로 간주</p>
+    <script>
+        if(!null){
+            alert('null');
+        } // 'null' 경고창 뜸. null은 false지만 !null은 true.
+    </script>
+</body>
+</html>

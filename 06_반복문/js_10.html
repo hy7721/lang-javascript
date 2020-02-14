@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <h1>Loop</h1>
+    <h2>For문</h2>
+    <script>
+        var j=0;
+        while(j<10){
+            document.write('coding '+j+'<br/>');
+            j=j+1;
+        }
+
+        for(var i=0; i<10; i=i+1){
+            document.write('coding '+i+'<br/>');
+        }
+
+        // for문을 썼을 때 더 짧게 작성할 수 있음
+        // i=i+1; 과 i++은 대충 같은 의미
+    </script>
+
+    <h3>i++과 ++i의 차이</h3>
+    <ul>
+        <li>i=0; alert(i++); >> 기존의 값을 사용한 후 i의 값을 증가 >> alert 0</li>
+        <li>i=0; alert(++i); >> i의 값을 사용할 때 증가 시키고 사용 >> alert 1</li>
+    </ul>
+</body>
+</html>

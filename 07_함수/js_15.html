@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <h1>function</h1>
+    <h2>함수의 효용</h2>
+    <ul>
+        <li>재사용성.</li>
+        <li>유지보수에 용이하다.</li>
+        <li>가독성이 좋다. numbering(); 함수의 이름만 호출하면 됨.</li>
+    </ul>
+    <script>
+        function numbering(){
+            var i=0;
+            while(i<20){
+                document.write(i+'<br/>');
+                i += 1;
+            }
+        }
+
+        numbering();
+    </script>
+</body>
+</html>

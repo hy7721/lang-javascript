@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <h1>function</h1>
+    <h2>입력</h2>
+    <h3>매개변수(parameter), 인자(argument)</h3>
+    <script>
+        function get_argument(arg){
+            return arg*1000;
+        }
+        // function get_argument(매개변수){}
+        // 이때 arg > 매개변수 parameter
+
+        alert(get_argument(1)); // 1000
+        alert(get_argument(2)); // 2000
+        // get_argument(인자). 인자 argument
+    </script>
+
+    <h3>복수의 인자</h3>
+    <script>
+        function get_arguments(arg1, arg2){
+            return arg1 + arg2;
+        }
+
+        alert(get_arguments(10,20));
+        alert(get_arguments(20,30));
+    </script>
+
+    <h3>함수를 정의하는 다른 방법</h3>
+    <script>
+        numbering = function (){
+            i = 0;
+            while(i < 10){
+                document.write(i);
+                i += 1;
+            }   
+        } // numbering 앞에 var 생략됨. numbering이라는 변수에 함수가 대입된 상태.
+
+        numbering();
+    </script>
+
+    <h4>익명함수</h4>
+    <p>함수를 정의하는 것 + 정의된 함수를 바로 호출하는 것을 하나의 문장에 쓸 수 있음.</p>
+    <script>
+        (function(){
+            j=0;
+            while(j<10){
+                document.write(i);
+                j += 1;
+            }
+        })(); // 정의된 함수를 ()로 묶고.. 그 함수를 호출할 때 쓰는 ()로 마무리.
+    </script>
+</body>
+</html>

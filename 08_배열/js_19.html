@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <h2>배열의 제거와 정렬</h2>
+    <h3>배열의 맨 앞에 있는 데이터 제거 'shift'</h3>
+    <script>
+        var li = ['a', 'b', 'c', 'd', 'e'];
+        li.shift();
+        alert(li);
+        // b, c, d, e
+    </script>
+
+    <h3>배열의 맨 뒤에 있는 데이터 제거 'pop'</h3>
+    <script>
+        li.pop();
+        alert(li);
+        // b, c, d
+    </script>
+
+    <h3>정렬 'sort', 'reverse'</h3>
+    <p>정렬은 프로그래밍에서 굉장히 중요한 주제. 얼마나 빠르게 정렬할 수 있나 > 알고리즘</p>
+    <script>
+        var zoo = ['c', 'e', 'a', 'b', 'd'];
+        zoo.sort();
+        // a, b, c, d, e 알파벳 순서대로 정렬
+        zoo.reverse();
+        // e, d, c, b, a 알파벳 역순으로 정렬
+    </script>
+</body>
+</html>

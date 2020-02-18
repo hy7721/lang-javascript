@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h1>Object</h1>
+    <h2>객체란?</h2>
+    <p>배열과 객체는 유사.</p>
+    <ul>
+        <li>[배열]은 아이템에 대한 식별자로 숫자를 사용. 데이터가 추가되면 배열 전체에서 중복되지 않는 인덱스가 자동으로 만들어져서 추가된 데이터에 대한 식별자가 된다. 이 인덱스를 이용해서 데이터를 가져오게 되는 것.</li>
+        <li>{객체}는 인덱스로 문자를 사용. 다른 언어에서는 연관배열(associative array) 또는 맵(map), 딕셔너리(Dictionary)라는 데이터 타입이 객체에 해당. 나중에 객체지향이라는 프로그래밍 패러다임과 밀접하게 연결되지만 지금은 기본만.</li>
+    </ul>
+
+    <script>
+        // 객체 만드는 방법 1
+        var grades = {'egoing':10, 'k8805':6, 'sorialgi':80}
+
+        // 객체 만드는 방법 2
+        var grades = {};
+        grades{'egoing'}=10;
+        grades{'k8805'}=6;
+        grades{'sorialgi'}=80;
+
+        // 객체 만드는 방법 3
+        var grades = new Object();
+        grades{'egoing'}=10;
+        grades{'k8805'}=6;
+        grades{'sorialgi'}=80;
+
+        // index값 가져오는 방법 1
+        grades['egoing'];
+
+        // index값 가져오는 방법 2
+        grades.egoing;
+
+        // index값 가져오는 방법 3
+        grades['ego'+'ing'];
+    </script>
+</body>
+</html>

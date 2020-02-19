@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        // 객체 안에 객체가 들어 갈수도 있고 함수가 들어 갈수도 있음.
+        var grades = {
+            'list' : {'egoing':10, 'k8805':8, 'sorialgi':80}
+        }
+        alert(grades['list']['egoing']); // 10 출력
+
+        var grades1 = {
+            'show' : function(){
+                alert('Hello World');
+            }
+        }
+        grades1['show']();
+
+        var grades = {
+            'list': {'egoing': 10, 'k8805': 6, 'sorialgi': 80},
+            'show' : function(){
+                for(var name in this.list){
+                    document.write(name+':'+this.list[name]+"<br />");
+
+                    // this - 함수가 속해있는 객체를 가리키는 변수. > var grades를 가리킴.
+                    // this.list - grades 라는 객체가 갖고 있는 list 라는 key값이 가리키는 객체인.. {'egoing' : 10, 'k8805' : 8, 'sorialgi' : 80} 을 가리킴
+                }
+            }
+        };
+        grades.show();
+    </script>
+</body>
+</html>

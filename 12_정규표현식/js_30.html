@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <h1>Regular Expression</h1>
+    <h2>정규표현식 패턴을 만들 때 옵션값 i - i를 붙이면 대소문자를 구분하지 않음</h2>
+    <script>
+        var xi = /a/;
+        "Abcde".match(xi); // return값은 null
+
+        var oi = /a/i;
+        "Abcde".match(xi); // return값은 'A'
+    </script>
+
+    <h2>정규표현식 패턴을 만들 때 옵션값 g - 검색된 모든 결과를 리턴</h2>
+    <script>
+        var xg = /a/;
+        "abcdea".match(xg); // return값은 'a' 한개.
+
+        var og = /a/g;
+        "abcdea".match(og); // return값은 'a', 'a' 두개.
+    </script>
+
+    <h2>i와 g를 동시에 쓰는 것도 가능</h2>
+    <script>
+        var ig= /a/ig;
+        "AabcdeAa".match(ig); // return 값은 'A', 'a', 'A', 'a'
+    </script>
+</body>
+</html>

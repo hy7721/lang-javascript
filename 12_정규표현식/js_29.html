@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <h1>Regular Expression</h1>
+    <h2>String.match()</h2>
+    <script>
+        var pattern = /a/;
+        var str = 'abcdef';
+        str.match(pattern); // return값은 ['a']
+    </script>
+
+    <h2>String.replace()</h2>
+    <script>
+        var str = 'abcdef';
+        str.replace(pattern, 'A'); // return값은 'Abcdef'
+    </script>
+</body>
+</html>
